@@ -1,5 +1,8 @@
 import * as React from 'react';
+import Dropzone from 'react-dropzone'
+import Loader from 'react-loader-spinner'
 import './App.css';
+
 
 export default class App extends React.Component<{}> {
   public render() {
