@@ -27,7 +27,7 @@ export default class App extends React.Component<{}, IState> {
     const file = files[0]
     const reader = new FileReader();
     reader.onload = (readerEvt) => {
-        const binaryString = readerEvt.target!!.result;
+        const binaryString = (String)(reader.result);
         this.upload(btoa(binaryString))
     };
 
